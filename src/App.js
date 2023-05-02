@@ -14,9 +14,7 @@ function Box({xStatus, tiles, onPlay}) {
    function click (i) {
     if (tiles[i] || Winner(tiles)) {
       return;
-    } else  if (tiles[i] && !Winner(tiles)) {
-      return;
-    }
+    } 
     const nextTiles = tiles.slice();
     if (xStatus) {
       nextTiles[i] = "X";
